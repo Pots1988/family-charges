@@ -1,0 +1,50 @@
+html {
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 1.38;
+}
+
+body {
+  background: $bg;
+  color: $col;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: $font-main;
+  padding: 46px 0;
+  min-height: 100vh;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+.visually-hidden {
+  @include visually-hidden;
+}
+
+.sect {
+  padding: 1rem 0;
+  position: relative;
+}
+
+.btn {
+  position: relative;
+}
+
+.btn-edit {
+  padding: 0.3rem;
+  line-height: 1;
+
+  svg {
+    transition: 0.3s;
+    fill: currentColor;
+  }
+
+  &:hover {
+    svg {
+      fill: #fff;
+    }
+  }
+}
